@@ -46,7 +46,7 @@ jobs:
       - name: Build and push image
         uses: docker/build-push-action@v7
         with:
-          context: build
+          context: vlc-telnet/build
           platforms: "linux/arm64,linux/amd64"
           push: true
           tags: |
